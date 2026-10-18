@@ -98,7 +98,7 @@ export default function Page() {
 
       <section className="summary-section" id="summary">
         <div className="section-heading"><p className="section-kicker">/ Summary</p><span>Profile overview</span></div>
-        <p className="summary-copy">Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning, with hands-on experience building real-time computer vision applications in Python using OpenCV and MediaPipe. Completed cybersecurity job simulations with Tata and Deloitte Australia covering threat identification, incident response, and forensic analysis. Seeking to apply skills in AI, data analysis, and secure software development to deliver real-world solutions.</p>
+        <p className="summary-copy">I&apos;m a Computer Science and Engineering student focused on Artificial Intelligence and Machine Learning, building practical tools that connect intelligent systems with real-world needs. My experience spans real-time computer vision with Python, OpenCV, and MediaPipe, alongside cybersecurity work in threat detection, incident response, and digital forensics. I&apos;m driven to create thoughtful, reliable software across AI, data, and security.</p>
       </section>
 
       <section className="education-section" id="education">
