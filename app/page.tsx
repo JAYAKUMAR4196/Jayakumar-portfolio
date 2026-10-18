@@ -120,6 +120,17 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="internship-section" id="internship">
+        <div className="section-heading"><p className="section-kicker">/ Internship &amp; training</p><span>Applied learning</span></div>
+        <div className="internship-list">
+          <article className="internship-item">
+            <span className="internship-period">Sep 2026 — Oct 2026</span>
+            <div><h3>Python for Data Analysis</h3><p>BeeSkilled</p></div>
+            <span className="internship-type">Training</span>
+          </article>
+        </div>
+      </section>
+
       <section className="skills-section" id="skills">
         <div className="section-heading"><p className="section-kicker">/ Technical skills</p><span>Tools and focus areas</span></div>
         <div className="skills-list">
