@@ -63,7 +63,7 @@ export default function Page() {
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
-        <a className="header-link" href="#contact">Let&apos;s talk <ArrowUpRight size={15} /></a>
+        <a className="header-link" href="/JayakumarS-CV.pdf" target="_blank" rel="noreferrer">View resume <ArrowUpRight size={15} /></a>
         <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={21} /> : <Menu size={21} />}
         </button>
@@ -183,6 +183,7 @@ export default function Page() {
           <a className="contact-email" href="#contact">kumarjaya4196@gmail.com <ArrowUpRight size={20} /></a>
           <a className="contact-phone" href="tel:+918660603923">+91 86606 03923</a>
           <a className="contact-phone" href="https://github.com/JAYAKUMAR4196" target="_blank" rel="noreferrer">github.com/JAYAKUMAR4196 <ArrowUpRight size={18} /></a>
+          <a className="contact-phone" href="/JayakumarS-CV.pdf" target="_blank" rel="noreferrer">View resume <ArrowUpRight size={18} /></a>
         </div>
         <form className="conversation-form" onSubmit={handleSubmit}>
           <div className="form-row">
