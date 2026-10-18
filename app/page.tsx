@@ -29,6 +29,7 @@ const certifications = [
 const projects = [
   {
     number: '01',
+    year: '2025',
     title: 'AMPUS',
     subtitle: 'AI-based monitoring of productivity and user state',
     description: 'Designed and built an AI-driven system that monitors user productivity and mental/emotional state in real time through webcam-based analysis.',
@@ -38,6 +39,20 @@ const projects = [
       'Converted behavioral signals into quantified productivity scores and generated intelligent, real-time suggestions for the user.',
     ],
     tags: ['Python', 'OpenCV', 'MediaPipe', 'AI Fusion'],
+  },
+  {
+    number: '02',
+    year: '2026',
+    title: 'Productly AI',
+    subtitle: 'Product copy generator',
+    description: 'Built a browser-based tool that turns product details into ready-to-use descriptions tailored to a chosen tone, length, language, audience, and SEO strategy.',
+    details: [
+      'Created a focused Next.js, React, and TypeScript experience for generating, refining, regenerating, and exporting product copy.',
+      'Added export options for TXT, Markdown, JSON, and PDF, with responsive layouts and light and dark themes across devices.',
+      'Kept product information local with automatic draft recovery, so the tool works without a backend and data stays on the user’s device.',
+    ],
+    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://ai-descripition-product-inky.vercel.app',
   },
 ]
 
@@ -178,11 +193,11 @@ export default function Page() {
       </section>
 
       <section className="work-section" id="work">
-        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>01 project / personal</span></div>
+        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>02 projects / personal / 2026</span></div>
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
             <div className="project-visual"><div className="signal-orbit orbit-one" /><div className="signal-orbit orbit-two" /><div className="signal-orbit orbit-three" /><div className="signal-core" /><span className="visual-label">LIVE / SIGNAL FUSION</span></div>
-            <div className="project-info"><span className="project-number">{project.number}</span><p className="project-type">Personal project / 2025</p><h2>{project.title}</h2><h3>{project.subtitle}</h3><p className="project-description">{project.description}</p><ul className="project-details">{project.details.map((detail) => <li key={detail}>{detail}</li>)}</ul><div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><a className="project-link" href="#contact">Discuss the project <ArrowUpRight size={16} /></a></div>
+            <div className="project-info"><span className="project-number">{project.number}</span><p className="project-type">Personal project / {project.year}</p><h2>{project.title}</h2><h3>{project.subtitle}</h3><p className="project-description">{project.description}</p><ul className="project-details">{project.details.map((detail) => <li key={detail}>{detail}</li>)}</ul><div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><div className="project-links"><a className="project-link" href="#contact">Discuss the project <ArrowUpRight size={16} /></a>{project.link && <a className="project-link" href={project.link} target="_blank" rel="noreferrer">View prototype <ArrowUpRight size={16} /></a>}</div></div>
           </article>
         ))}
       </section>
