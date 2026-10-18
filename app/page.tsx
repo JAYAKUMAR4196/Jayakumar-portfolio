@@ -88,7 +88,7 @@ export default function Page() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> AI / ML engineering student</p>
           <h1>Building intelligence<br /><em>with intention.</em></h1>
-          <p className="hero-description">I&apos;m Jaya Kumar — a computer science student exploring the space where computer vision, data, and secure software meet.</p>
+          <p className="hero-description">I&apos;m Jayakumar S — a computer science student exploring the space where computer vision, data, and secure software meet.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">Explore the work <ArrowUpRight size={16} /></a>
             <a className="text-link" href="#contact">Get in touch <ArrowUpRight size={16} /></a>
