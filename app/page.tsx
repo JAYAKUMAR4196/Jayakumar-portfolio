@@ -29,6 +29,7 @@ const certifications = [
 const projects = [
   {
     number: '01',
+    year: '2025',
     title: 'AMPUS',
     subtitle: 'AI-based monitoring of productivity and user state',
     description: 'Designed and built an AI-driven system that monitors user productivity and mental/emotional state in real time through webcam-based analysis.',
@@ -38,6 +39,20 @@ const projects = [
       'Converted behavioral signals into quantified productivity scores and generated intelligent, real-time suggestions for the user.',
     ],
     tags: ['Python', 'OpenCV', 'MediaPipe', 'AI Fusion'],
+  },
+  {
+    number: '02',
+    year: '2026',
+    title: 'Productly AI',
+    subtitle: 'Product copy generator',
+    description: 'Built a browser-based tool that turns product details into ready-to-use descriptions tailored to a chosen tone, length, language, audience, and SEO strategy.',
+    details: [
+      'Created a focused Next.js, React, and TypeScript experience for generating, refining, regenerating, and exporting product copy.',
+      'Added export options for TXT, Markdown, JSON, and PDF, with responsive layouts and light and dark themes across devices.',
+      'Kept product information local with automatic draft recovery, so the tool works without a backend and data stays on the user’s device.',
+    ],
+    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://ai-descripition-product-inky.vercel.app',
   },
 ]
 
@@ -63,7 +78,7 @@ export default function Page() {
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
-        <a className="header-link" href="#contact">Let&apos;s talk <ArrowUpRight size={15} /></a>
+        <a className="header-link" href="/JayakumarS-CV.pdf" target="_blank" rel="noreferrer">View resume <ArrowUpRight size={15} /></a>
         <button className="menu-toggle" type="button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={21} /> : <Menu size={21} />}
         </button>
@@ -73,7 +88,7 @@ export default function Page() {
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> AI / ML engineering student</p>
           <h1>Building intelligence<br /><em>with intention.</em></h1>
-          <p className="hero-description">I&apos;m Jaya Kumar — a computer science student exploring the space where computer vision, data, and secure software meet.</p>
+          <p className="hero-description">I&apos;m Jayakumar S — a computer science student exploring the space where computer vision, data, and secure software meet.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">Explore the work <ArrowUpRight size={16} /></a>
             <a className="text-link" href="#contact">Get in touch <ArrowUpRight size={16} /></a>
@@ -98,7 +113,7 @@ export default function Page() {
 
       <section className="summary-section" id="summary">
         <div className="section-heading"><p className="section-kicker">/ Summary</p><span>Profile overview</span></div>
-        <p className="summary-copy">Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning, with hands-on experience building real-time computer vision applications in Python using OpenCV and MediaPipe. Completed cybersecurity job simulations with Tata and Deloitte Australia covering threat identification, incident response, and forensic analysis. Seeking to apply skills in AI, data analysis, and secure software development to deliver real-world solutions.</p>
+        <p className="summary-copy">I&apos;m a Computer Science and Engineering student focused on Artificial Intelligence and Machine Learning, building practical tools that connect intelligent systems with real-world needs. My experience spans real-time computer vision with Python, OpenCV, and MediaPipe, alongside cybersecurity work in threat detection, incident response, and digital forensics. I&apos;m driven to create thoughtful, reliable software across AI, data, and security.</p>
       </section>
 
       <section className="education-section" id="education">
@@ -116,6 +131,17 @@ export default function Page() {
           <article className="education-item">
             <span className="education-year">Class X</span>
             <div><h3>SSLC</h3><p>Karnataka Secondary Education Examination Board</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section className="internship-section" id="internship">
+        <div className="section-heading"><p className="section-kicker">/ Internship &amp; training</p><span>Applied learning</span></div>
+        <div className="internship-list">
+          <article className="internship-item">
+            <span className="internship-period">Sep 2026 — Oct 2026</span>
+            <div><h3>Python for Data Analysis</h3><p>BeeSkilled</p></div>
+            <span className="internship-type">Training</span>
           </article>
         </div>
       </section>
@@ -167,11 +193,11 @@ export default function Page() {
       </section>
 
       <section className="work-section" id="work">
-        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>01 project / personal</span></div>
+        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>02 projects / personal / 2026</span></div>
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
             <div className="project-visual"><div className="signal-orbit orbit-one" /><div className="signal-orbit orbit-two" /><div className="signal-orbit orbit-three" /><div className="signal-core" /><span className="visual-label">LIVE / SIGNAL FUSION</span></div>
-            <div className="project-info"><span className="project-number">{project.number}</span><p className="project-type">Personal project / 2025</p><h2>{project.title}</h2><h3>{project.subtitle}</h3><p className="project-description">{project.description}</p><ul className="project-details">{project.details.map((detail) => <li key={detail}>{detail}</li>)}</ul><div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><a className="project-link" href="#contact">Discuss the project <ArrowUpRight size={16} /></a></div>
+            <div className="project-info"><span className="project-number">{project.number}</span><p className="project-type">Personal project / {project.year}</p><h2>{project.title}</h2><h3>{project.subtitle}</h3><p className="project-description">{project.description}</p><ul className="project-details">{project.details.map((detail) => <li key={detail}>{detail}</li>)}</ul><div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><div className="project-links"><a className="project-link" href="#contact">Discuss the project <ArrowUpRight size={16} /></a>{project.link && <a className="project-link" href={project.link} target="_blank" rel="noreferrer">View prototype <ArrowUpRight size={16} /></a>}</div></div>
           </article>
         ))}
       </section>
@@ -183,6 +209,7 @@ export default function Page() {
           <a className="contact-email" href="#contact">kumarjaya4196@gmail.com <ArrowUpRight size={20} /></a>
           <a className="contact-phone" href="tel:+918660603923">+91 86606 03923</a>
           <a className="contact-phone" href="https://github.com/JAYAKUMAR4196" target="_blank" rel="noreferrer">github.com/JAYAKUMAR4196 <ArrowUpRight size={18} /></a>
+          <a className="contact-phone" href="/JayakumarS-CV.pdf" target="_blank" rel="noreferrer">View resume <ArrowUpRight size={18} /></a>
         </div>
         <form className="conversation-form" onSubmit={handleSubmit}>
           <div className="form-row">
