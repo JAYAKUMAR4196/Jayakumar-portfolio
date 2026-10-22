@@ -54,6 +54,20 @@ const projects = [
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     link: 'https://ai-descripition-product-inky.vercel.app',
   },
+  {
+    number: '03',
+    year: '2026',
+    title: 'Festiva AI',
+    subtitle: 'Interactive event-planning web application',
+    description: 'An interactive event-planning web application that brings event inspiration, package discovery, budget estimation, and planning workflows together in one responsive interface for weddings, birthdays, private celebrations, and corporate events.',
+    details: [
+      'Built Three.js-powered centerpiece scenes with scroll-based animation and Botanical, Velvet Twilight, and Modern Minimalist themes.',
+      'Added adjustable budget assumptions with visual allocation charts, plus phase-based event checklist tracking saved in browser localStorage.',
+      'Created a filterable event showcase with lightbox previews, service descriptions, curated packages, keyboard-accessible Cmd+K / Ctrl+K navigation, and a validated multi-step inquiry workflow.',
+    ],
+    tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Vite', 'TanStack Start', 'TanStack Router', 'Three.js', 'GSAP', 'Recharts', 'Radix UI', 'React Hook Form', 'Zod', 'Vitest', 'Testing Library'],
+    link: 'https://celebration-event-planner-ozaf.vercel.app',
+  },
 ]
 
 export default function Page() {
@@ -193,10 +207,10 @@ export default function Page() {
       </section>
 
       <section className="work-section" id="work">
-        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>02 projects / personal / 2026</span></div>
+        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>projects / personal /</span></div>
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
-            <div className="project-visual"><div className="signal-orbit orbit-one" /><div className="signal-orbit orbit-two" /><div className="signal-orbit orbit-three" /><div className="signal-core" /><span className="visual-label">LIVE / SIGNAL FUSION</span></div>
+            <div className={`project-visual ${project.number === '03' ? 'project-visual-image' : ''}`}>{project.number === '03' ? <img src="/festiva-ai.png" alt="Burgundy floral centerpiece and candlelit table setting for Festiva AI" /> : <><div className="signal-orbit orbit-one" /><div className="signal-orbit orbit-two" /><div className="signal-orbit orbit-three" /><div className="signal-core" /><span className="visual-label">LIVE / SIGNAL FUSION</span></>}</div>
             <div className="project-info"><span className="project-number">{project.number}</span><p className="project-type">Personal project / {project.year}</p><h2>{project.title}</h2><h3>{project.subtitle}</h3><p className="project-description">{project.description}</p><ul className="project-details">{project.details.map((detail) => <li key={detail}>{detail}</li>)}</ul><div className="tag-list">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><div className="project-links"><a className="project-link" href="#contact">Discuss the project <ArrowUpRight size={16} /></a>{project.link && <a className="project-link" href={project.link} target="_blank" rel="noreferrer">View prototype <ArrowUpRight size={16} /></a>}</div></div>
           </article>
         ))}
