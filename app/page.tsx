@@ -193,7 +193,7 @@ export default function Page() {
       </section>
 
       <section className="work-section" id="work">
-        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>02 projects / personal / 2026</span></div>
+        <div className="section-heading"><p className="section-kicker">/ Selected work</p><span>projects / personal /</span></div>
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
             <div className="project-visual"><div className="signal-orbit orbit-one" /><div className="signal-orbit orbit-two" /><div className="signal-orbit orbit-three" /><div className="signal-core" /><span className="visual-label">LIVE / SIGNAL FUSION</span></div>
