@@ -54,6 +54,20 @@ const projects = [
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
     link: 'https://ai-descripition-product-inky.vercel.app',
   },
+  {
+    number: '03',
+    year: '2026',
+    title: 'Festiva AI',
+    subtitle: 'Interactive event-planning web application',
+    description: 'An interactive event-planning web application that brings event inspiration, package discovery, budget estimation, and planning workflows together in one responsive interface for weddings, birthdays, private celebrations, and corporate events.',
+    details: [
+      'Built Three.js-powered centerpiece scenes with scroll-based animation and Botanical, Velvet Twilight, and Modern Minimalist themes.',
+      'Added adjustable budget assumptions with visual allocation charts, plus phase-based event checklist tracking saved in browser localStorage.',
+      'Created a filterable event showcase with lightbox previews, service descriptions, curated packages, keyboard-accessible Cmd+K / Ctrl+K navigation, and a validated multi-step inquiry workflow.',
+    ],
+    tags: ['React 19', 'TypeScript', 'Tailwind CSS', 'Vite', 'TanStack Start', 'TanStack Router', 'Three.js', 'GSAP', 'Recharts', 'Radix UI', 'React Hook Form', 'Zod', 'Vitest', 'Testing Library'],
+    link: 'https://celebration-event-planner-ozaf.vercel.app',
+  },
 ]
 
 export default function Page() {
