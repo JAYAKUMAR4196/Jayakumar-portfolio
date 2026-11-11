@@ -24,6 +24,16 @@ const certifications = [
   { title: 'Java Fundamentals', issuer: 'IBM Career Education Program', date: 'Issued Nov 2025', id: 'b28f9105507a479ba367c281aaa324ea' },
   { title: 'Tata — Cybersecurity Analyst Job Simulation', issuer: 'Forage', date: 'Issued Jun 2026', id: 'Q7J4fQmB6Zy7dTJ8k' },
   { title: 'Deloitte Australia — Cyber Job Simulation', issuer: 'Forage', date: 'Issued Jun 2026', id: 'SJqrDGa5TjPkJqZh7' },
+  {
+    title: 'Mastercard Cybersecurity Virtual Experience Program',
+    issuer: 'Forage',
+    date: 'November 11, 2026',
+    details: [
+      'Completed a job simulation as an analyst on Mastercard’s Security Awareness Team.',
+      'Helped identify and report security threats, including phishing.',
+      'Analyzed which areas of the business needed stronger security training and implemented training courses and procedures for those teams.',
+    ],
+  },
 ]
 
 const projects = [
@@ -177,7 +187,7 @@ export default function Page() {
         <div className="certifications-list">
           {certifications.map((certification) => (
             <article className="certification-row" key={certification.title}>
-              <div><h3>{certification.title}</h3><p>{certification.issuer}</p></div>
+              <div><h3>{certification.title}</h3><p>{certification.issuer}</p>{'details' in certification && <ul className="certification-details">{certification.details.map((detail) => <li key={detail}>{detail}</li>)}</ul>}</div>
               <span>{certification.date}</span>
               {certification.id && <small>Credential ID {certification.id}</small>}
             </article>
