@@ -137,7 +137,7 @@ export default function Page() {
 
       <section className="summary-section" id="summary">
         <div className="section-heading"><p className="section-kicker">/ Summary</p><span>Profile overview</span></div>
-        <p className="summary-copy">I&apos;m a Computer Science and Engineering student focused on Artificial Intelligence and Machine Learning, building practical tools that connect intelligent systems with real-world needs. My experience spans real-time computer vision with Python, OpenCV, and MediaPipe, alongside cybersecurity work in threat detection, incident response, and digital forensics. I&apos;m driven to create thoughtful, reliable software across AI, data, and security.</p>
+        <p className="summary-copy">I&apos;m a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I design and develop practical, reliable software that connects intelligent systems with real-world needs, with experience spanning real-time computer vision using Python, OpenCV, and MediaPipe, as well as cybersecurity, threat detection, incident response, and digital forensics. My goal is to turn complex technical challenges into thoughtful, secure, and useful solutions across AI, data, and software engineering.</p>
       </section>
 
       <section className="education-section" id="education">
