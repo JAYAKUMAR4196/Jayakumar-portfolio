@@ -137,7 +137,7 @@ export default function Page() {
 
       <section className="summary-section" id="summary">
         <div className="section-heading"><p className="section-kicker">/ Summary</p><span>Profile overview</span></div>
-        <p className="summary-copy">I&apos;m a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I design and develop practical, reliable software that connects intelligent systems with real-world needs, with experience spanning real-time computer vision using Python, OpenCV, and MediaPipe, as well as cybersecurity, threat detection, incident response, and digital forensics. My goal is to turn complex technical challenges into thoughtful, secure, and useful solutions across AI, data, and software engineering.</p>
+        <p className="summary-copy">AI/ML ENGINEERING STUDENT<br /><strong>Building Intelligence with Intention.</strong><br />Computer Vision • Artificial Intelligence • Cybersecurity • Data Analysis<br /><br />I&apos;m Jayakumar S — passionate about building intelligent applications and turning innovative ideas into real-world solutions.<br /><br />Python • OpenCV • Machine Learning • React • FastAPI<br /><br />Explore my work<br /><br />Projects · Skills · Experience</p>
       </section>
 
       <section className="education-section" id="education">
